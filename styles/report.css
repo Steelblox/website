@@ -1,0 +1,61 @@
+body {
+  font-family: nimbus-sans,sans-serif;
+  font-weight: 300;
+}
+
+.left {
+  float: left;
+  width: 50%;
+}
+
+.propertySummary {
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.spacer {
+  height: 5px;
+}
+
+.setbacks {
+  float: :left;
+  width: 100%;
+}
+
+.minFront {
+  float: left;
+  width: 33%;
+}
+
+.minSide {
+  float: left;
+  width: 33%;
+}
+
+.minRear {
+  float: left;
+  width: 33%;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+img.logo {
+  height: 40px;
+  float: right;
+}
+
+.projectAddress {
+  font-weight: bold;
+}
+
+/* .setbacksDescription {
+  margin-left: 10px;
+} */

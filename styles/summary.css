@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  color: #090909;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.summary_item-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid #404040;
+  padding: 8px 0px;
+}
+
+#w-node-d2c67bd3-c066-600e-5781-1dc290d31d8a-c5e41220::after {
+  content: " (Final freight cost calculated at time of delivery.)";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.icon-embed-xxsmall,
+#btnPrint,
+.config-discalimer,
+#summ_back-btn {
+  display: none;
+}
+
+.config_summ-card.total {
+  display: inline-block;
+  width: 50%;
+  padding: 16px;
+  background-color: #efefef;
+  -webkit-print-color-adjust: exact;
+}
+
+.config_summ-card.total:last-child {
+  background-color: #e1e1e1;
+  -webkit-print-color-adjust: exact;
+}
+
+.summ_total-header.price {
+  font-size: 32px;
+  color: black;
+}
+
+.timeline_list {
+  position: relative;
+  padding-left: 16px;
+}
+
+.timeline_item::marker {
+  content: "";
+}
+
+.timeline_item:last-child {
+  border-left: 0;
+}
+
+.timeline_item::before {
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  content: " ";
+  border-radius: 999px;
+  background: white;
+  height: 20px;
+  width: 20px;
+}
+
+.timeline_item:nth-child(1)::before {
+  background: center/70% no-repeat
+    url("https://uploads-ssl.webflow.com/60247b4d3be37651b31b5969/63bc6ab89d4b04f71f99efbc_design.svg");
+  background-color: white;
+  -webkit-print-color-adjust: exact;
+}
+
+.timeline_item:nth-child(2)::before {
+  background: center/70% no-repeat
+    url("https://uploads-ssl.webflow.com/60247b4d3be37651b31b5969/63bc6abab0f5da751f1d1bea_sitework.svg");
+  background-color: white;
+  -webkit-print-color-adjust: exact;
+}
+
+.timeline_item:nth-child(3)::before {
+  background: center/70% no-repeat
+    url("https://uploads-ssl.webflow.com/60247b4d3be37651b31b5969/63bc6abaa9784b42435f2b03_transport.svg");
+  background-color: white;
+  -webkit-print-color-adjust: exact;
+}
+
+.timeline_item:nth-child(4)::before {
+  background: center/70% no-repeat
+    url("https://uploads-ssl.webflow.com/60247b4d3be37651b31b5969/63bc6abae53a194481d5cde6_site-assembly.svg");
+  background-color: white;
+  -webkit-print-color-adjust: exact;
+}
+
+.timeline_item:nth-child(5)::before {
+  background: center/70% no-repeat
+    url("https://uploads-ssl.webflow.com/60247b4d3be37651b31b5969/63bc6aba720089a8fd345c84_fin.svg");
+  background-color: white;
+  -webkit-print-color-adjust: exact;
+}
+
+.timeline_item {
+  border-left: 1px dashed #404040;
+  position: relative;
+  min-height: 50px;
+  padding: 0px 16px 0px 32px;
+}
+
+.timeline_item-header {
+  margin-bottom: 4px;
+  color: black;
+}
+
+.timeline_item-subheader {
+  font-size: 12px;
+  color: #404040;
+}
+
+.timeline_item._30perc {
+  padding-bottom: 80px;
+}
+
+.timeline_item._40perc {
+  padding-bottom: 112px;
+}
+
+.timeline_item._40perc._2col {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.divider-line {
+  width: 1px;
+  height: 64px;
+}
+
+.timeline_item._10perc {
+  padding-bottom: 48px;
+}
+
+.timeline_item._15perc {
+  padding-bottom: 64px;
+}
+
+.timeline_item.is-end {
+  padding-bottom: 48px;
+}
+
+.first-page_wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 32px;
+  page-break-after: always;
+}
+
+.first-page_wrap .header-wrap {
+  flex-grow: 1;
+}
+
+.first-page_wrap .summary-hero_wrap {
+  flex-grow: 2;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header-wrap p {
+  margin: 0px;
+}
+
+.summary-hero_wrap {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+.summary-hero_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.summary-hero_content-wrap {
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  padding: 24px 24px 0px 0px;
+  background-color: white;
+}
+
+.summary-hero_content-wrap h1 {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.summary-hero_content-wrap p {
+  margin: 0px;
+  margin-bottom: 4px;
+}
+
+.summ_pricing-list {
+  page-break-after: always;
+}
+
+@page {
+  margin-top: 1in;
+}
+
+@media print {
+  .pagebreak {
+    clear: both;
+    page-break-after: always;
+  }
+}
